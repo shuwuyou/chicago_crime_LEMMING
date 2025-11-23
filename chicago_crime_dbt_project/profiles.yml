@@ -1,0 +1,15 @@
+chicago_crime_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "sfedu02-azb79167"
+      user: "LEMMING"
+      role: "TRAINING_ROLE"
+      warehouse: "TRAINING_WH"
+      database: "MLDS430"
+      schema: "final_LEMMING"
+      private_key_path: "/Users/shuwuyou/rsa_key.p8"
+      private_key_passphrase: ""
+      threads: 4
+      client_session_keep_alive: False

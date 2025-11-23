@@ -1,0 +1,57 @@
+[0m13:35:12.813438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057efa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057fbfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105814690>]}
+
+
+============================== 13:35:12.818138 | 5b7872dd-958b-42f0-980f-946bb6cfdb50 ==============================
+[0m13:35:12.818138 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:35:12.818769 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'partial_parse': 'True', 'introspect': 'True', 'no_print': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init chicago_crime_dbt_project', 'log_path': 'logs', 'printer_width': '80', 'quiet': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/shuwuyou/.dbt', 'empty': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'target_path': 'None'}
+[0m13:35:12.832829 [debug] [MainThread]: Starter project path: /opt/homebrew/Caskroom/miniforge/base/envs/dbt_env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:35:12.839659 [info ] [MainThread]: 
+Your new dbt project "chicago_crime_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:35:12.839965 [info ] [MainThread]: Setting up your profile.
+[0m13:35:18.382499 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:35:18.382863 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:35:18.383053 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:37:04.776129 [info ] [MainThread]: Profile chicago_crime_dbt_project written to /Users/shuwuyou/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:37:04.793461 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 112.03113, "process_in_blocks": "0", "process_kernel_time": 0.280652, "process_mem_max_rss": "130564096", "process_out_blocks": "0", "process_user_time": 0.948314}
+[0m13:37:04.795338 [debug] [MainThread]: Command `dbt init` succeeded at 13:37:04.795217 after 112.03 seconds
+[0m13:37:04.796287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101504b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058144d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1014ef950>]}
+[0m13:37:04.796929 [debug] [MainThread]: Flushing usage events
+[0m13:37:05.337671 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:04:03.255221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108483d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10886d650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10886e290>]}
+
+
+============================== 14:04:03.259950 | 1533b533-692d-43b3-90a2-95b06296f013 ==============================
+[0m14:04:03.259950 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:04:03.260828 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/shuwuyou/.dbt', 'use_colors': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'empty': 'None', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error': 'None', 'version_check': 'True', 'write_json': 'True', 'target_path': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'partial_parse': 'True'}
+[0m14:04:03.288923 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:04:03.289726 [info ] [MainThread]: python version: 3.11.0
+[0m14:04:03.290384 [info ] [MainThread]: python path: /opt/homebrew/Caskroom/miniforge/base/envs/dbt_env/bin/python3.11
+[0m14:04:03.290835 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m14:04:04.615043 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:04:04.616722 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:04:04.617057 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:04:04.681209 [info ] [MainThread]: Using profiles dir at /Users/shuwuyou/.dbt
+[0m14:04:04.681642 [info ] [MainThread]: Using profiles.yml file at /Users/shuwuyou/.dbt/profiles.yml
+[0m14:04:04.681970 [info ] [MainThread]: Using dbt_project.yml file at /Users/shuwuyou/Desktop/NU/25Fall/data_viz/chicago_crime_LEMMING/dbt_project.yml
+[0m14:04:04.682388 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:04:04.684897 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.5064176, "process_in_blocks": "0", "process_kernel_time": 0.590669, "process_mem_max_rss": "173801472", "process_out_blocks": "0", "process_user_time": 1.612585}
+[0m14:04:04.685806 [debug] [MainThread]: Command `dbt debug` failed at 14:04:04.685597 after 1.51 seconds
+[0m14:04:04.686257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087ed690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087ee150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087ea950>]}
+[0m14:04:04.686919 [debug] [MainThread]: Flushing usage events
+[0m14:04:05.141331 [debug] [MainThread]: An error was encountered while trying to flush usage events

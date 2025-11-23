@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: final_LEMMING
+    schema: final_LEMMING
+    tables:
+      - name: raw_crime_LEMMING
+
+models:
+  - name: stg_crime_LEMMING
+    columns:
+      - name: id
+        tests: [not_null]
+      - name: date
+        tests: [not_null]
+
+  - name: fct_crime_summary_LEMMING
+    columns:
+      - name: crime_count
+        tests: [not_null]
