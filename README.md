@@ -36,7 +36,7 @@ Tableau Dashboard (trend line + heatmap)
 
 The Python script queries Chicago’s open data API with pagination and loads the full year of data into Snowflake using key-pair authentication.
 
-Your extraction script is here:
+The extraction script is here:
 **`extract_crime_LEMMING.py`**
 
 The script performs:
@@ -50,13 +50,16 @@ The script performs:
 
 # **4. Snowflake Storage**
 
+`final_LEMMING_QUERY.sql` is the queries run in snowflake.
+It is used to create the schema final_LEMMING and creating the raw_crime_LEMMING table.
+
 All tables are stored in the **MLDS430.final_LEMMING** schema:
 
 * `raw_crime_LEMMING` → raw API data
 * `stg_crime_LEMMING` → cleaned staging table
 * `fct_crime_summary_LEMMING` → monthly aggregated crime summary
 
-Snowflake connection is configured using private-key authentication in your `profiles.yml`:
+Snowflake connection is configured using private-key authentication in my `profiles.yml`:
 
 
 
